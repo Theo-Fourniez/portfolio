@@ -1,0 +1,90 @@
+/* bleu
+ #81D4FA
+ noir
+ #121212*/
+
+ html {
+    scroll-behavior: smooth;
+ }
+
+body{
+    background-color: #121212;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    color: #72BBDC;
+}
+
+.home{
+    text-align: center;
+    min-height: 100vh;
+    min-height: 100%;
+}
+
+
+.headline{
+    height:80vh;
+}
+
+.headline h1{
+    font-size: 5em;
+}
+
+.headline h2{
+    font-size: 3em;
+}
+
+a{
+    color:red;
+}
+
+/* CONTACT BUTTON */
+@media (min-width: 1200px){
+    .button{
+        -ms-flex: 0 0 12.5%;
+        flex : 0 0 12.5%;
+        max-width: 12.5%;
+    }
+}
+    .button{
+        color: #72BBDC;
+        border-radius: 50px;
+        border: 2px solid #72BBDC;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .button a{
+        color: #72BBDC;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+
+/* DOWN ARROW */
+
+@keyframes down{
+    from{
+        transform: initial;
+    }
+    20%{
+        transform: translateY(20px);
+
+    }
+    45%{
+        transform: initial;
+    }
+    to{
+        transform: initial;
+
+    }
+}
+
+#down_arrow{
+    animation: down 3.5s ease-in-out infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+    height: 80px;
+    width: 80px;
+}
