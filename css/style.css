@@ -15,6 +15,10 @@ h1,h2,h3,h4,h5,h6,p{
     color: #72BBDC;
 }
 
+.section{
+    min-height: 100vh;
+}
+
 .home{
     text-align: center;
     min-height: 100vh;
@@ -38,6 +42,9 @@ a{
     color:red;
 }
 
+#arrow_link{
+    display: block;
+}
 /* CONTACT BUTTON */
 @media (min-width: 1200px){
     .button{
@@ -87,4 +94,11 @@ a{
     transform-box: fill-box;
     height: 80px;
     width: 80px;
+}
+
+/* MON PARCOURS */
+
+#parcours,
+#parcours > h1{
+    text-align: center;
 }
