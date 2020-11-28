@@ -209,4 +209,17 @@
   .timeline.animated .timeline-row.active:nth-child(odd) .timeline-content {
       left: 0;
  }
+
+
+ /* DOTS */
+ .timeline-row .timeline-content:before {
+   top:30px;
+   left:-47px;
+}
+
+ .timeline-row:nth-child(even) .timeline-content:before {
+  left: -48px;
+  right: initial;
+}
+
 }
