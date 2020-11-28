@@ -3,6 +3,21 @@
  noir
  #121212*/
 
+@font-face {
+    font-family: 'JosefinSans-Regular';
+    src: url('../font/JosefinSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Light';
+    src: url('../font/SourceSansPro-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('../font/SourceSansPro-Regular.ttf') format('truetype');
+}
+
  html {
     scroll-behavior: smooth;
  }
@@ -12,12 +27,15 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6,p{
+    font-family: 'JosefinSans-Regular';
     color: #72BBDC;
 }
 
 .section{
     min-height: 100vh;
 }
+
+/* HOME PAGE */
 
 .home{
     text-align: center;
@@ -31,20 +49,17 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .headline h1{
+    font-family: 'JosefinSans-Regular';
     font-size: 5em;
+    margin-bottom: 0;
 }
 
 .headline h2{
     font-size: 3em;
+    font-family: 'SourceSansPro-Light';
 }
 
-a{
-    color:red;
-}
 
-#arrow_link{
-    display: block;
-}
 /* CONTACT BUTTON */
 @media (min-width: 1200px){
     .button{
@@ -67,6 +82,7 @@ a{
         color: #72BBDC;
         text-decoration: none;
         font-size: 1.5em;
+        font-family: 'SourceSansPro-Regular';
     }
 
 /* DOWN ARROW */
@@ -96,9 +112,15 @@ a{
     width: 80px;
 }
 
+#arrow_link{
+    display: block;
+}
+
 /* MON PARCOURS */
 
-#parcours,
-#parcours > h1{
+#parcours > div > div > h1{
+
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
