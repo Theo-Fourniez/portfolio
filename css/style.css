@@ -119,8 +119,16 @@ h1,h2,h3,h4,h5,h6,p{
 /* MON PARCOURS */
 
 #parcours > div > div > h1{
-
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 50px;
+}
+
+a{
+    color:#72BBDC;
+}
+
+a:hover{
+    color:#72BBDC;
+    text-decoration: none;
 }

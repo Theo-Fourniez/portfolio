@@ -22,7 +22,7 @@
   padding-left: 50%;
   position: relative;
   margin-bottom: 30px;
-  width: 50vw;
+  width: 1000px;
 }
 
 .timeline-row .timeline-time {
@@ -143,6 +143,12 @@ img.pin-icon{
   border-bottom: 10px solid transparent;
 }
 
+@media (max-width: 1050px) {
+  .timeline-row {
+    width: 95vw;
+  }
+}
+
 @media (max-width: 767px) {
   .timeline {
       padding: 15px 10px;
@@ -214,6 +220,9 @@ img.pin-icon{
   width: 90vw;
  }
 
+ .timeline-row .timeline-content *{
+  text-align: center;
+}
 
  /* DOTS */
  .timeline-row .timeline-content:before {
@@ -226,4 +235,5 @@ img.pin-icon{
   right: initial;
 }
   /* END */
+
 }
