@@ -31,8 +31,9 @@ h1,h2,h3,h4,h5,h6,p{
     color: #72BBDC;
 }
 /* SECTIONS */
-
-
+.section{
+    min-height: 100vh;
+}
 .container-fluid.section > div > div > h1{
     text-align: center;
     margin-top: 50px;
