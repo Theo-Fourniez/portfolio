@@ -1,4 +1,4 @@
-# Projet : Portfolio personnel
+# Projet : Portfolio personnel "from scratch"
 ## Technologies utilisées :  
 
 ### Pour le maquettage: 
