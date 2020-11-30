@@ -30,9 +30,13 @@ h1,h2,h3,h4,h5,h6,p{
     font-family: 'JosefinSans-Regular';
     color: #72BBDC;
 }
+/* SECTIONS */
 
-.section{
-    min-height: 100vh;
+
+.container-fluid.section > div > div > h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /* HOME PAGE */
@@ -118,12 +122,6 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* MON PARCOURS */
 
-#parcours > div > div > h1{
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
 a{
     color:#72BBDC;
 }
@@ -131,4 +129,42 @@ a{
 a:hover{
     color:#72BBDC;
     text-decoration: none;
+}
+
+/* MES COMPETENCES */
+
+.skill-card h4{
+    padding-bottom:0;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 6vw;
+}
+
+div.skills div:last-of-type .skill-card:last-of-type h4{
+    padding: 0;
+}
+
+div.skills > div{
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+.skill-card img{
+    width: 25vw;
+}
+
+@media (min-width: 576px){ /* res >= 576px */
+    .skill-card img{
+        width: 18vw;
+    }
+
+    .skill-card h4{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px){ /* res >= 1200 */
+    .skill-card img{
+        width: 10.5vw;
+    }
 }
