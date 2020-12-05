@@ -159,6 +159,47 @@
 
     <div class="container-fluid section" id="projets">
 
+      <div class="row align-items-center">
+        <div class="col-12">
+          <h1>Mes projets</h1>
+        </div>
+      </div>
+
+      <div class="row projects">
+        <div class="col-12 projectrow d-flex align-items-center justify-content-around">
+          <div class="project">
+            <img class="img-fluid" src="img/screenshots/ProjetTutoreS1_Screenshot.png" alt="Capture d'écran de mon projet : Portal 2 Eco+ Edition" id="projet1">
+            <h1 class="image-title">Portal 2 Eco+ Edition</h1>
+          </div>
+          <div class="project">
+            <img class="img-fluid" src="img/screenshots/Portal2Eco+_Screenshot.png" alt="Capture d'écran de mon projet : Portal 2 Eco+ Edition" id="projet2" onclick="toggleModal()">
+            <div class="mymodal">
+              <div class="mymodal__overlay"></div>
+              <img class="mymodal_button" onclick="toggleModal()" src="img/exitCross.svg"></img>
+              <div class="mymodal__header">Portal 2 Eco+ Edition</div>
+              <div class="mymodal__content">Content</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row projects">
+        <div class="col-12 projectrow d-flex flex-row align-items-center justify-content-around">
+          <div class="project">
+            <img class="img-fluid" src="img/screenshots/portfolio_Screenshot.jpg" alt="Capture d'écran de mon projet : Portal 2 Eco+ Edition" id="projet3" onclick="toggleModal()">
+            <div class="mymodal">
+              <div class="mymodal__overlay"></div>
+              <button onclick="toggleModal()">X</button>
+              <div class="mymodal__header">Portfolio Personnel</div>
+              <div class="mymodal__content">Content</div>
+            </div>
+          </div>
+          <div class="project">
+            <img class="img-fluid" src="img/screenshots/Bikerender_LCCreations.png" alt="Capture d'écran de mon projet : Portal 2 Eco+ Edition" id="projet4" >
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <div class="container-fluid section" id="apropos">
@@ -170,7 +211,7 @@
     </div>
 
     <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-
+    <script src="js/modals.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </body>

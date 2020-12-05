@@ -169,3 +169,137 @@ div.skills > div{
         width: 10.5vw;
     }
 }
+
+/* MES PROJETS */
+
+.projects .projectrow .project > img{
+    border-radius: 0.75vw;
+    width: 25vw;
+}
+
+.projects .projectrow{
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+#projet2{
+    width: 15vw;
+}
+
+#projet3{
+    width: 20vw;
+}
+
+div.projectrow > div{
+    position: relative;
+    display: inline-block;
+}
+
+.image-title-bg{
+    z-index: 1;
+    display: flex;
+    position: relative;
+    height: 100%;
+
+}
+.image-title {
+    transition: opacity ease-in-out 0.5s;
+    opacity: 0;
+    position: absolute;
+    bottom:400px;
+}
+
+.project img:hover ~ .image-title{
+    transition: opacity ease-in-out 0.5s;
+    opacity: 1;
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 1.75vw;
+    position: absolute;
+    top: 25%;
+    left: 33.55%;
+    transform: translate(-50%,-50%);
+}
+
+.project > img:hover{
+    transition: all ease-in-out 0.5s;
+    filter: blur(1px);
+}
+
+.project > img{
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+/* MODAL */
+.mymodal {
+    z-index: -100;
+    opacity: 0;
+    transition: all ease-in-out 0.25s;
+    height: 90%;
+    left: 5%;
+    position: fixed;
+    display: grid;
+    top: 5%;
+    width: 90%;
+    border-radius: 17px;
+}
+
+.mymodal.open {
+    z-index: 40;
+    transition: all ease-in-out 0.25s;
+    opacity: 1;
+    display: grid;
+    grid-template-rows: 50px auto 100px;
+    background-color: #252525;
+}
+
+.mymodal.open *{
+    z-index: 50;
+}
+
+.mymodal__content {
+    overflow-y: hidden;
+    justify-self: center;
+    color: #72BBDC;
+}
+
+.mymodal__header {
+    justify-self: center;
+    color: #72BBDC;
+}
+
+.mymodal__header h1{
+    font-family: "JosefinSans-Regular";
+}
+.mymodal_button{
+    opacity: 1;
+    justify-self: end;
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+.mymodal__overlay{
+    z-index: -99;
+    opacity: 0;
+    transition: all ease 0.5s;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.mymodal.open .mymodal__overlay{
+    z-index: 10;
+    opacity: 0.2;
+    transition: all ease 0.5s;
+    background-color: black;
+}
