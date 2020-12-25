@@ -172,8 +172,8 @@ div.skills > div{
 
 /* MES PROJETS */
 
-.projects .projectrow .project > img{
-    border-radius: 0.75vw;
+.projects .projectrow .project > a > img{
+    border-radius: 15px;
     width: 25vw;
 }
 
@@ -192,7 +192,7 @@ div.skills > div{
 
 div.projectrow > div{
     position: relative;
-    display: inline-block;
+    display: inline-block;&
 }
 
 .image-title-bg{
@@ -232,35 +232,16 @@ div.projectrow > div{
 }
 
 /* MODAL */
-.mymodal {
-    z-index: -100;
-    opacity: 0;
-    transition: all ease-in-out 0.25s;
-    height: 90%;
-    left: 5%;
-    position: fixed;
-    display: grid;
-    top: 5%;
-    width: 90%;
-    border-radius: 17px;
-}
 
-.mymodal.open {
-    z-index: 40;
-    transition: all ease-in-out 0.25s;
-    opacity: 1;
+.mymodal{
+    background-color: #121212;
     display: grid;
-    grid-template-rows: 50px auto 100px;
-    background-color: #252525;
-}
-
-.mymodal.open *{
-    z-index: 50;
 }
 
 .mymodal__content {
-    overflow-y: hidden;
-    justify-self: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     color: #72BBDC;
 }
 
@@ -269,37 +250,72 @@ div.projectrow > div{
     color: #72BBDC;
 }
 
+.mymodal__header *{
+    text-align: center;
+
+}
 .mymodal__header h1{
     font-family: "JosefinSans-Regular";
+    font-size:3em;
 }
-.mymodal_button{
-    opacity: 1;
+
+.mymodal__header h2{
+    font-family: "SourceSansPro-Light";
+    font-size:2em;
+}
+
+.mymodal__iconline:first-child{
+    margin-top: 1.5vh;
+}
+
+.mymodal__button{
     justify-self: end;
+
+}
+
+.mymodal__button img{
     width: 40px;
+    transition: all ease-in-out 0.3s;
+
+}
+.mymodal__button:hover img{
+    width: 45px;
+    transition: all ease-in-out 0.3s;
+}
+
+.mymodal__iconline *{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    vertical-align: middle;
+}
+
+.mymodal__iconline h2{
+    line-height: 1.5;
+    margin-inline-start: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.carousel{
+    width: 15vw;
     height: auto;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-right: 20px;
 }
 
-.no-scroll{
-    overflow: hidden;
+.carousel-indicators{
+    z-index: 51 !important;
 }
 
-.mymodal__overlay{
-    z-index: -99;
-    opacity: 0;
-    transition: all ease 0.5s;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
+.jq-modal a.close-modal[class*="icon-remove"] {
+    display: none;
 }
 
-.mymodal.open .mymodal__overlay{
-    z-index: 10;
-    opacity: 0.2;
-    transition: all ease 0.5s;
-    background-color: black;
+.jq-modal{
+    background-color: #121212;
+    text-align: center;
+    max-width: 700px;
+}
+
+.carousel .slide {
+    justify-self: center;
 }
