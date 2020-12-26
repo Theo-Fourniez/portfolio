@@ -29,6 +29,12 @@
     }
 }
 
+@media(max-width:576px){
+    html {
+        font-size: 70%;
+    }
+}
+
 body{
     background-color: #121212;
 }
@@ -348,10 +354,24 @@ div.projectrow > div{
     margin-top: 0;
 }
 
+.mymodal__iconline a:hover{
+    text-decoration: underline;
+}
+
+.mymodal__iconline img{
+    width: 2.75rem;
+}
+
 .carousel{
-    width: 20vw;
+    width: 30rem;
     height: auto;
     margin-bottom: 1rem;
+}
+
+@media(max-width:1025px){
+    .carousel {
+        width: 25rem;
+        }
 }
 
 .carousel-indicators{
