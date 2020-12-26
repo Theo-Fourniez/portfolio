@@ -22,6 +22,13 @@
     scroll-behavior: smooth;
  }
 
+ 
+@media(max-width:1025px){
+    html {
+        font-size: 80%;
+    }
+}
+
 body{
     background-color: #121212;
 }
@@ -291,6 +298,7 @@ div.projectrow > div{
 .mymodal__header {
     justify-self: center;
     color: #72BBDC;
+    margin-bottom: 1rem;
 }
 
 .mymodal__header *{
@@ -317,13 +325,13 @@ div.projectrow > div{
 }
 
 .mymodal__button img{
-    width: 40px;
-    transition: all ease-in-out 0.3s;
+    width: 2.25rem;
+    transition: all ease-out 0.3s;
 
 }
 .mymodal__button:hover img{
-    width: 45px;
-    transition: all ease-in-out 0.3s;
+    width: 2.5rem;
+    transition: all ease-out 0.3s;
 }
 
 .mymodal__iconline *{
@@ -334,15 +342,16 @@ div.projectrow > div{
 }
 
 .mymodal__iconline h2{
-    line-height: 1.5;
-    margin-inline-start: 15px;
+    line-height: 3.5rem;
+    margin-inline-start: 0.9375rem;
     margin-bottom: 0;
     margin-top: 0;
 }
 
 .carousel{
-    width: 15vw;
+    width: 20vw;
     height: auto;
+    margin-bottom: 1rem;
 }
 
 .carousel-indicators{
@@ -356,9 +365,13 @@ div.projectrow > div{
 .jq-modal{
     background-color: #121212;
     text-align: center;
-    max-width: 700px;
+    max-width: 47.5rem;
 }
 
 .carousel .slide {
     justify-self: center;
+}
+
+.carousel-indicators li{
+    background-color: #72BBDC;
 }
