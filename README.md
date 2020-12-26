@@ -8,8 +8,8 @@
 - HTML
 - CSS
 - Bootstrap 4
-- Javascript (JQuery)
-[- JQuery Modal](https://jquerymodal.com/)
+- Javascript (JQuery)  
+- [JQuery Modal](https://jquerymodal.com/)
 
 ## Caractéristiques du site :
 - [x] Responsive
