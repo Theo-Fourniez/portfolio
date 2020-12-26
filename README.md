@@ -5,10 +5,11 @@
 - Adobe XD
 
 ### Pour la réalisation technique :
--  HTML
+- HTML
 - CSS
-- Bootstrap
-- Javascript
+- Bootstrap 4
+- Javascript (JQuery)
+[- JQuery Modal](https://jquerymodal.com/)
 
 ## Caractéristiques du site :
 - [x] Responsive
