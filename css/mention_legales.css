@@ -1,0 +1,54 @@
+/* bleu
+ #81D4FA
+ noir
+ #121212*/
+
+@font-face {
+    font-family: 'JosefinSans-Regular';
+    src: url('../font/JosefinSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Light';
+    src: url('../font/SourceSansPro-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('../font/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+ html {
+    scroll-behavior: smooth;
+ }
+
+ 
+@media(max-width:1025px){
+    html {
+        font-size: 90%;
+    }
+}
+
+@media(max-width:576px){
+    html {
+        font-size: 70%;
+    }
+}
+
+body{
+    background-color: #121212;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'JosefinSans-Regular';
+    color: #72BBDC;
+}
+
+a{
+    color: #72BBDC;
+}
+
+li,p{
+    font-size: 1.25rem;
+    color:rgb(182, 182, 182);
+}

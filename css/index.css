@@ -27,11 +27,20 @@
     html {
         font-size: 80%;
     }
+    #map iframe{
+        width: 40vw;
+        height: 25vh;
+    }
 }
 
 @media(max-width:576px){
     html {
         font-size: 70%;
+    }
+
+    #map iframe{
+        width: 50vw;
+        height: 30vh;
     }
 }
 
@@ -402,4 +411,46 @@ div.projectrow > div{
 
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2372BBDC' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* CONTACT */
+
+.iconline{
+    margin-block-end: 2.5rem;
+}
+
+.iconline:hover > a > h3{
+    color: #7fd3fa;
+    transition: all ease-in-out 0.2s;
+}
+
+.iconline:hover > a > img{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    filter: invert(62%) sepia(71%) saturate(447%) hue-rotate(179deg) brightness(112%) contrast(96%);
+    transition: all ease-in-out 0.2s;
+
+}
+
+.iconline > a > img{
+    filter: invert(68%) sepia(59%) saturate(244%) hue-rotate(154deg) brightness(87%) contrast(89%);
+    transition: all ease-in-out 0.2s;
+}
+
+.iconline > a > *{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+.iconline > a > img{
+    width: 3rem;
+    margin-right: 0.5rem;
+}
+
+#contact{
+    min-height: 90vh;
 }
