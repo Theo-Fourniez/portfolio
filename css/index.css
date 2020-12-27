@@ -35,6 +35,12 @@
     }
 }
 
+@media(min-width:2560px){
+    html {
+        font-size: 125%;
+    }
+}
+
 body{
     background-color: #121212;
 }
