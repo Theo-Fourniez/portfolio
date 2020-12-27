@@ -27,20 +27,11 @@
     html {
         font-size: 80%;
     }
-    #map iframe{
-        width: 40vw;
-        height: 25vh;
-    }
 }
 
 @media(max-width:576px){
     html {
         font-size: 70%;
-    }
-
-    #map iframe{
-        width: 50vw;
-        height: 30vh;
     }
 }
 
@@ -202,7 +193,7 @@ div.skills > div{
 /* MES PROJETS */
 
 .projects .projectrow .project > a > img{
-    border-radius: 15px;
+    border-radius: 8px;
     width: 25vw;
 }
 
@@ -453,4 +444,47 @@ div.projectrow > div{
 
 #contact{
     min-height: 90vh;
+}
+
+#contact div.row > div:first-child{
+    padding-left: 10vw !important;
+}
+
+#contact div.row > div:last-child{
+    padding-right: 10vw !important;
+}
+
+@media(max-width:1150px){
+    #contact div.row > div:first-child{
+        padding-left: 5vw !important;
+    }
+    
+    #contact div.row > div:last-child{
+        padding-right: 5vw !important;
+    }
+    
+}
+
+
+@media(max-width:1025px){
+    #map iframe{
+        width: 40vw;
+        height: 300px;
+    }
+
+    #contact div.row > div:first-child{
+        padding-left: 15px !important;
+    }
+    
+    #contact div.row > div:last-child{
+        padding-right: 15px !important;
+    }
+    
+}
+
+@media(max-width:576px){
+    #map iframe{
+        width: 50vw;
+        height: 25vh;
+    }
 }
