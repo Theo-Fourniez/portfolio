@@ -16,6 +16,7 @@
   border-right: 5px solid #F2F2F2;
   height: 100%;
   display: block;
+  z-index: -1;
 }
 
 .timeline-row {

@@ -3,6 +3,10 @@
  noir
  #121212*/
 
+ :root {
+    --animate-delay: 0.1s;
+  }
+
 @font-face {
     font-family: 'JosefinSans-Regular';
     src: url('../font/JosefinSans-Regular.ttf') format('truetype');
@@ -32,6 +36,12 @@
 @media(max-width:576px){
     html {
         font-size: 70%;
+    }
+}
+
+@media(min-width:2560px){
+    html {
+        font-size: 125%;
     }
 }
 
@@ -88,27 +98,37 @@ h1,h2,h3,h4,h5,h6,p{
 /* CONTACT BUTTON */
 @media (min-width: 1200px){
     .button{
-
         max-width: 20.5%;
         min-width: 15%;
     }
 }
-    .button{
-        color: #72BBDC;
-        border-radius: 50px;
-        border: 2px solid #72BBDC;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-right: 0;
-        padding-left: 0;
-    }
-    
-    .button a{
-        color: #72BBDC;
-        text-decoration: none;
-        font-size: 1.5rem;
-        font-family: 'SourceSansPro-Regular';
-    }
+.button{
+    color: #72BBDC;
+    border-radius: 50px;
+    border: 2px solid #72BBDC;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0;
+    padding-left: 0;
+    transition: all 0.5s;
+}
+
+.button h1{
+    color: #72BBDC;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'SourceSansPro-Regular';
+    margin: 0;
+    transition: all 0.5s;
+}
+  
+.button:hover{
+    background-color: #72BBDC;
+}
+
+.button:hover h1{
+    color: #121212;
+}
 
 /* DOWN ARROW */
 
@@ -193,7 +213,7 @@ div.skills > div{
 /* MES PROJETS */
 
 .projects .projectrow .project > a > img{
-    border-radius: 15px;
+    border-radius: 8px;
     width: 25vw;
 }
 
@@ -402,4 +422,89 @@ div.projectrow > div{
 
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2372BBDC' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* CONTACT */
+
+.iconline{
+    margin-block-end: 2.5rem;
+}
+
+.iconline:hover > a > h3{
+    color: #7fd3fa;
+    transition: all ease-in-out 0.2s;
+}
+
+.iconline:hover > a > img{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    filter: invert(62%) sepia(71%) saturate(447%) hue-rotate(179deg) brightness(112%) contrast(96%);
+    transition: all ease-in-out 0.2s;
+
+}
+
+.iconline > a > img{
+    filter: invert(68%) sepia(59%) saturate(244%) hue-rotate(154deg) brightness(87%) contrast(89%);
+    transition: all ease-in-out 0.2s;
+}
+
+.iconline > a > *{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+.iconline > a > img{
+    width: 3rem;
+    margin-right: 0.5rem;
+}
+
+#contact{
+    min-height: 90vh;
+}
+
+#contact div.row > div:first-child{
+    padding-left: 10vw !important;
+}
+
+#contact div.row > div:last-child{
+    padding-right: 10vw !important;
+}
+
+@media(max-width:1150px){
+    #contact div.row > div:first-child{
+        padding-left: 5vw !important;
+    }
+    
+    #contact div.row > div:last-child{
+        padding-right: 5vw !important;
+    }
+    
+}
+
+
+@media(max-width:1025px){
+    #map iframe{
+        width: 40vw;
+        height: 300px;
+    }
+
+    #contact div.row > div:first-child{
+        padding-left: 15px !important;
+    }
+    
+    #contact div.row > div:last-child{
+        padding-right: 15px !important;
+    }
+    
+}
+
+@media(max-width:576px){
+    #map iframe{
+        width: 50vw;
+        height: 25vh;
+    }
 }
