@@ -52,3 +52,14 @@ li,p{
     font-size: 1.25rem;
     color:rgb(182, 182, 182);
 }
+
+a > .icon{
+    filter: invert(68%) sepia(59%) saturate(244%) hue-rotate(154deg) brightness(87%) contrast(89%);
+    transition: all ease-in-out 0.2s;
+    height: auto;
+    width: 3rem;
+}
+
+a:hover > .icon{
+    filter: invert(62%) sepia(71%) saturate(447%) hue-rotate(179deg) brightness(112%) contrast(96%);
+}
