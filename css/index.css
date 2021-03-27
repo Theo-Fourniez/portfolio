@@ -9,19 +9,19 @@
 
 @font-face {
     font-family: 'JosefinSans-Regular';
-    src: url('../font/JosefinSans-Regular.ttf') format('truetype');
+    src: url('../font/JosefinSans-Regular.woff2') format('woff2');
     font-display: swap;
 }
 
 @font-face {
     font-family: 'SourceSansPro-Light';
-    src: url('../font/SourceSansPro-Light.ttf') format('truetype');
+    src: url('../font/SourceSansPro-Light.woff2') format('woff2');
     font-display: swap;
 }
 
 @font-face {
     font-family: 'SourceSansPro-Regular';
-    src: url('../font/SourceSansPro-Regular.ttf') format('truetype');
+    src: url('../font/SourceSansPro-Regular.woff2') format('woff2');
     font-display: swap;
 }
 
